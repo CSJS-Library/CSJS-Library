@@ -233,3 +233,78 @@ footer{
 footer p, a{
     background-color: var(--white);
 }
+@media only screen and (max-width: 600px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-align: justify;
+        /* outline: red 1px solid; */
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 20pt;
+    }
+    .navbar{
+        display: none;
+        text-align: justify;
+    }
+    .container .contents{
+        padding: 38px;
+    }
+    .container .hero h1{
+        background-color: rgba(0, 0, 0, 0);
+        color: var(--white);
+        text-transform: uppercase;
+        border-bottom: var(--accent) 5px solid;
+        letter-spacing: 1px;
+        padding-bottom: 5px;
+        font-size: 30px;
+        text-align: center;
+        width: 250px;
+    }
+    .container .content-header{
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .container #main-grid{
+        display: grid;
+        grid-auto-rows: 150px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 6px;
+    }
+    #facilities-grid-image{
+        display: grid;
+        grid-auto-rows: 150px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 6px;
+        font-size: 10px;
+    }
+    .container .card-container .card-content{
+        font-size: 12px;
+        line-height: normal;
+        padding: 10px;
+        height: 160px;
+        width: 100%;
+        text-align: left;
+    }
+    .container #policies{
+        background-position: right;
+        text-align: left;
+    }
+    .container .hero{
+        background-position: center;
+    }
+    footer{
+        display: flex;
+    }
+}
+@media only screen and (width: 1024px) {
+    .container .contents {
+            padding: 40px 10rem 20px 10rem;
+    }
+}
+@media only screen and (width: 820px) {
+    .container .contents {
+            padding: 40px 10rem 20px 10rem;
+    }
+}
